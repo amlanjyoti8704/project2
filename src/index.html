@@ -8,8 +8,9 @@
     <script src="script.js" defer></script>
 </head>
 <body class="bg-black">
-     <!-- //banner section starts here -->
-      <section class="relative  object-contain w-full h-[100vh] bg-[url(../images/Background_image.jpg)] bg-center bg-cover">
+<!-- <div class="space-y-5"> -->
+     <!-- //banner div starts here -->
+    <div class="relative  object-contain w-full h-[100vh] bg-[url(../images/Background_image.jpg)] bg-center bg-cover">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black"></div>
         
         <!-- <div class="absolute inset-0 backdrop-blur-md"></div> -->
@@ -52,78 +53,79 @@
                         
                     </div>
                 </div>
-             </div>
+        </div>
 
              
 
-        <!-- trending section starts here -->
-        <section class=" absolute w-full sm:py-[700px] py-[670px]">
-                <div class="space-y-[30px]">
+        <!-- trending div starts here -->
+        <div class=" absolute w-full sm:pt-[700px] pt-[670px]">
+                <div class="space-y-[10px]">
                     <div class="text-2xl xl:text-3xl w-full">
                         <h1 class="sm:ml-[60px] xl:ml-[135px] ml-[30px] text-white font-bold">Trending Now</h1>
                     </div>
-                    <div class="relative w-full">
+                    <div id="sup" class="relative w-full">
                         <div>
-                            <button class="xl:ml-[100px] absolute left-2 top-1/2 h-[80px] transform -translate-y-1/2 bg-[rgba(255,255,255,0.3)] p-2 rounded-full text-white"><</button>
+                            <button id="left" class="xl:ml-[100px] absolute left-2 top-1/2 h-[80px] transform -translate-y-1/2 bg-[rgba(255,255,255,0.3)] p-2 rounded-full text-white"><</button>
                         </div>
                         
-                        <div class="sm:mx-[70px] xl:mx-[150px] space-x-10 mx-[40px] flex shrink-0 overflow-x-scroll scrollbar-hide snap-x snap-mandatory px-4">
+                        <div id="img_parent" class="sm:p-[30px] sm:mx-[70px] xl:mx-[150px] space-x-10 mx-[40px] flex shrink-0 overflow-x-scroll scrollbar-hide snap-x snap-mandatory px-4">
                             <!-- cards -->
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABb7eHPTSWGCu247RvpZJHdW3qttaBrCbgX9RNWKBw-ysL1Tht2-OWWS4N5UarllTVyaC-5cX5Er5vJ-Y_LfK5STgnoG_iVkmt0Y.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABcJkAYihjBQ5SjWbwydLdZE8Dm1cJ0whRc21AEIS4V0VO8w65lEDAW5gwzTFTUuNqVTgBcgucwr6rMeRHra3xlru9n1CCtfOm1s.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABQuyT_IHXGbNr3UCYCsD9sCLduFJdHgOCXZrM0NsNO_OVUPMQaAlEJ8zyykVW29e4VMsUH9coCZVjtN-nOGsmotm2j9igi8Us2fvau2Z29yZmCteDoVcCEFJxx9AL4aAomem.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABRB3rewJT09RhxS4rHE_KfiiI3yrHEI3H2KcP4K5AxMBqUOZVM4QeaV9NjNs8CJ4AEjhH_BXKGaSWdOqQgWLNpHFKadmEfFjdf4.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABScSAnI47ovoETcYBhKCILXN91D3uCQTeh3aG24EF1iRpP7YNh86hK0eF8JkfKAzdNYZcjcvLy4UB_BpSQgg2AcvjjRMpP6A8C0.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABTsIHqmKvuiJaunFg-3M7eRlEBPik8Un-eqTK-od9x48LzeGITagPm82bIopTRvyhIEMehQNdXN2qfj0AVpDTMhftqYStaCieJdbO-jfhSkFUVGBs9eYkpkjdzOj_UCKZi53.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABVE91f6aWyMar1MbOlxTXz8tSOaRNfaxo1D_4gcXoFNjolQxTBRw3mR0zUZ_X7ALDtNQ0TpVTAXCPitJJUUlMbF9Pza5xOeHCrc.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABXslugEC7_hbc0IGG_Z0tlhJVPbrB3FGKbDqaiPOsXUR3SgblnInyKSjdzOCHraOlqKreRhxpWLj8-RmFoenz5zRv67y4jtKeIhjCuxL6PJh7JEKTBugV26eyhN4WZkrQjWc.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/AAAABZJH5UgOhy6NyDoAfEigLLNPRc_cw2W7Gz87mbTfvRDHbr1fLHhrPpcKQdXnREMcUcZbnX8_ZK8mYS1CgW8B4NXHcTA-grl4BSpgtPn-jMwZpsh7Kk2XcJArjUbsdp0u5JLX.webp" alt="">
                              </div>
         
-                             <div class="w-[140px] h-[240px] shrink-0 overflow-hidden snap-start ">
+                             <div id="images" class="w-[140px] h-[240px] shrink-0 overflow-hidden md:hover:scale-110 snap-start ">
                                 <img class="w-full h-full object-fill rounded-xl" src="../images/Pushpa2.webp" alt="">
                              </div>
           
                         </div>
                         <div>
-                            <button class="xl:mr-[100px] absolute right-2 top-1/2 h-[80px] transform -translate-y-1/2 bg-[rgba(255,255,255,0.3)] p-2 rounded-full text-white">></button>
+                            <button id="right" class="xl:mr-[100px] absolute right-2 top-1/2 h-[80px] transform -translate-y-1/2 bg-[rgba(255,255,255,0.3)] p-2 rounded-full text-white">></button>
                         </div>
                         
                     </div>
                 </div>
-        </section>
-        <!-- tending sction ends here -->
+        </div>
+        <!-- tending sction ends here -->xxx
 
-        <!--more reasons to join section starts here  -->
-        <section class=" w-full md:py-[1070px] py-[1070px]">
+
+        <!--more reasons to join div starts here  -->
+        <div class=" w-full sm:pt-[1100px] md:pt-[1090px] pt-[1020px]">
                 <div class="space-y-[30px]">
                     <div class="text-2xl xl:text-3xl w-full">
-                        <h1 class="sm:ml-[60px] xl:ml-[135px] ml-[30px] text-white font-bold">More reasons to join</h1>
+                        <h1 class="sm:ml-[60px] xl:ml-[135px] ml-[30px] text-white font-bold ">More reasons to join</h1>
                     </div>
                     <div class="relative w-full">
                         
@@ -171,189 +173,252 @@
                         
                     </div>
                 </div>
-        </section>
-        <!-- more reasons to join section ends here -->
+        </div>
+        <!-- more reasons to join div ends here -->
 
-      </section>
+        <div class="flex flex-col items-center w-full h-[100vh] text-center relative">
 
-      <!-- Banner section ends here -->
-
-       <section class="h-[40vh]"></section>
-
-      
-      <section class="w-full h-[100vh] text-center relative">
-
-        <!-- frequently asked questions -->
-
-        <section class="w-full xl:pt-[180px] pt-[580px]">
-            <div class="space-y-[30px]">
-                <div class="text-2xl xl:text-3xl w-full text-left">
-                    <h1 class="sm:ml-[60px] xl:ml-[135px] ml-[30px] text-white font-bold">Frequently Asked Questions</h1>
-                </div>
+            <!-- frequently asked questions -->
     
-                <div class="relative w-full">
-                    <div class="sm:mx-[70px] xl:mx-[145px] mx-[40px] flex flex-col space-y-3 justify-between px-4">
-                        <!-- cards -->
-                         <div class="w-full xl:h-[80px] h-[65px]  flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
-                            <div class="text-white font-semibold">
-                                <h2 class="align-middle">What is Netflix?</h2>
-                            </div>
-                            <div>
-                                <img class="size-[20px]" src="../images/image copy 5.png" alt="">
-                            </div>
-                         </div>
+            <div id="frequentlyAQ" class="w-full pt-[90px]">
+                <div class="space-y-[30px]">
+                    <div class="text-2xl xl:text-3xl w-full text-left">
+                        <h1 class="sm:ml-[60px] xl:ml-[135px] ml-[30px] text-white font-bold">Frequently Asked Questions</h1>
+                    </div>
+        
+                    <div class="relative w-full">
+                        <div class="sm:mx-[70px] xl:mx-[145px] mx-[40px] flex flex-col space-y-3 justify-between px-4">
+                            <!-- cards -->
+                             <div>
+                                <div class="faq w-full xl:h-[80px] h-[65px] hover:bg-[rgba(255,255,255,0.5)] flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
+                                    <div class="text-white font-semibold">
+                                        <h2 class="align-middle">What is Netflix?</h2>
+                                    </div>
+                                    <div>
+                                        <img class="size-[20px]" src="../images/image copy 5.png" alt="">
+                                    </div>
+                                 </div>
     
-                         <div class="w-full xl:h-[80px] h-[65px]  flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
-                            <div class="text-white font-semibold">
-                                <h2 class="align-middle">How mush does Netflix cost?</h2>
-                            </div>
-                            <div>
-                                <img class="size-[20px]" src="../images/image copy 5.png" alt="">
-                            </div>
-                         </div>
+                                 <div id="faq_ans" class="hidden mt-1 p-4 text-white text-left w-full  rounded-2xl bg-[rgba(255,255,255,0.2)] font-light text-sm">
+                                    <div class="mb-8 pb-[1px] w-full bg-white rounded-full"></div>
     
-                         <div class="w-full xl:h-[80px] h-[65px]  flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
-                            <div class="text-white font-semibold">
-                                <h2 class="align-middle">Where can I watch?</h2>
-                            </div>
-                            <div>
-                                <img class="size-[20px]" src="../images/image copy 5.png" alt="">
-                            </div>
-                         </div>
+                                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                        <br><br>
+                                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                                    </p>
+                                 </div>
+                             </div>
+        
+                             <div>
+                                <div class="faq w-full xl:h-[80px] h-[65px] hover:bg-[rgba(255,255,255,0.5)] flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
+                                    <div class="text-white font-semibold">
+                                        <h2 class="align-middle">How mush does Netflix cost?</h2>
+                                    </div>
+                                    <div>
+                                        <img class="size-[20px]" src="../images/image copy 5.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div id="faq_ans" class="hidden mt-1 p-4 text-white text-left w-full  rounded-2xl bg-[rgba(255,255,255,0.2)] font-light text-sm">
+                                    <div class="mb-8 pb-[1px] w-full bg-white rounded-full"></div>
     
-                         <div class="w-full xl:h-[80px] h-[65px]  flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
-                            <div class="text-white font-semibold">
-                                <h2 class="align-middle">How do I cancel?</h2>
-                            </div>
+                                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                        <br><br>
+                                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                                    </p>
+                                 </div>
+                             </div>
+        
                             <div>
-                                <img class="size-[20px]" src="../images/image copy 5.png" alt="">
-                            </div>
-                         </div>
+                                <div class="faq w-full xl:h-[80px] h-[65px] hover:bg-[rgba(255,255,255,0.5)] flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
+                                    <div class="text-white font-semibold">
+                                        <h2 class="align-middle">Where can I watch?</h2>
+                                    </div>
+                                    <div>
+                                        <img class="size-[20px]" src="../images/image copy 5.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div id="faq_ans" class="hidden mt-1 p-4 text-white text-left w-full  rounded-2xl bg-[rgba(255,255,255,0.2)] font-light text-sm">
+                                    <div class="mb-8 pb-[1px] w-full bg-white rounded-full"></div>
     
-                         <div class="w-full xl:h-[80px] h-[65px]  flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
-                            <div class="text-white font-semibold">
-                                <h2 class="align-middle">What can I watch on Netflix?</h2>
+                                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                        <br><br>
+                                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                                    </p>
+                                 </div>
                             </div>
-                            <div>
-                                <img class="size-[20px]" src="../images/image copy 5.png" alt="">
-                            </div>
-                         </div>
+        
+                             <div>
+                                <div class="faq w-full xl:h-[80px] h-[65px] hover:bg-[rgba(255,255,255,0.5)] flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
+                                    <div class="text-white font-semibold">
+                                        <h2 class="align-middle">How do I cancel?</h2>
+                                    </div>
+                                    <div>
+                                        <img class="size-[20px]" src="../images/image copy 5.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div id="faq_ans" class="hidden mt-1 p-4 text-white text-left w-full  rounded-2xl bg-[rgba(255,255,255,0.2)] font-light text-sm">
+                                    <div class="mb-8 pb-[1px] w-full bg-white rounded-full"></div>
     
-                         <div class="w-full xl:h-[80px] h-[65px]  flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
-                            <div class="text-white font-semibold">
-                                <h2 class="align-middle">Is Netflix good for kids?</h2>
-                            </div>
+                                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                        <br><br>
+                                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                                    </p>
+                                 </div>
+                             </div>
+        
                             <div>
-                                <img class="size-[20px]" src="../images/image copy 5.png" alt="">
+                                <div class="faq w-full xl:h-[80px] h-[65px] hover:bg-[rgba(255,255,255,0.5)] flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
+                                    <div class="text-white font-semibold">
+                                        <h2 class="align-middle">What can I watch on Netflix?</h2>
+                                    </div>
+                                    <div>
+                                        <img class="size-[20px]" src="../images/image copy 5.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div id="faq_ans" class="hidden mt-1 p-4 text-white text-left w-full  rounded-2xl bg-[rgba(255,255,255,0.2)] font-light text-sm">
+                                    <div class="mb-8 pb-[1px] w-full bg-white rounded-full"></div>
+    
+                                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                        <br><br>
+                                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                                    </p>
+                                 </div>
                             </div>
-                         </div>
+        
+                            <div>
+                                <div class="faq w-full xl:h-[80px] h-[65px] hover:bg-[rgba(255,255,255,0.5)] flex justify-between items-center px-7 rounded-2xl bg-[rgba(255,255,255,0.2)]">
+                                    <div class="text-white font-semibold">
+                                        <h2 class="align-middle">Is Netflix good for kids?</h2>
+                                    </div>
+                                    <div>
+                                        <img class="size-[20px]" src="../images/image copy 5.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div id="faq_ans" class="hidden mt-1 p-4 text-white text-left w-full  rounded-2xl bg-[rgba(255,255,255,0.2)] font-light text-sm">
+                                    <div class="mb-8 pb-[1px] w-full bg-white rounded-full"></div>
+    
+                                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                                        <br><br>
+                                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+                                    </p>
+                                 </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+              </div>
+        
+            <!-- frequently asked question div ends here -->
+        
+              <!-- get start div -->
+               <div class="mx-auto sm:relative pt-[60px]">
+                <div>
+                    <div class="text-center">
+                        <h3 class="text-white">Ready to watch? Enter your email to create or restart your membership.</h3>
+                    </div>
+                    <div class="max-w-[400px] sm:max-w-[700px] mx-auto mt-5">
+                        <form action="" class="relative  flex sm:flex-row flex-col space-y-2 sm:space-y-0 items-center justify-center sm:space-x-2">
+                            <input class="h-12 w-full rounded-full sm:w-[70%] border-[0.5px] border-[rgba(255,255,255,0.8)] bg-[rgba(255,255,255,0.3)] px-4 text-white" autocomplete="email" type="text" placeholder="Email address">
+                            <button class="hidden sm:block h-12 w-full rounded-full sm:w-auto sm:px-4 bg-red-600 text-white hover:bg-red-800 ">Get Started ></button>
+                        </form>                    
+                    </div>
+                </div>
+               </div>
+               <button class="sm:hidden mt-2 sticky rounded-full min-h-12 max-w-[400px] w-full  bg-red-600 text-white hover:bg-red-800 ">Get Started ></button>
+    
+               <!-- get started div ends here -->
+    
+    
+    
+                <!-- Footer div -->
+               <div class="mt-[50px]  pb-[50px]  bg-black w-full">
+                <footer class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="font-extralight text-[15px] flex flex-col items-center">
+                        <!-- Questions Link -->
+                        <div class="w-full max-w-full sm:text-left text-center ">
+                            <h3 class="text-white">
+                                Questions? Call 
+                                <span class="underline cursor-pointer">7295883411</span>
+                            </h3>
+                        </div>
+    
+                        <!-- Footer Links -->
+                        <div class="w-full text-white text-center sm:text-justify md:text-left md:flex grid grid-cols-2 sm:grid-cols-3 gap-4 mt-[50px] justify-center md:justify-between">
+                            <!-- Column 1 -->
+                            <div>
+                                <ul class="flex flex-col space-y-3">
+                                    <li><a href="#frequentlyAQ" class="hover:underline">FAQ</a></li>
+                                    <li><a href="#" class="hover:underline">Investor Relations</a></li>
+                                    <li><a href="#" class="hover:underline">Privacy</a></li>
+                                    <li><a href="https://fast.com/" target="_blank" class="hover:underline">Speed Test</a></li>
+                                </ul>
+                            </div>
+    
+                            <!-- Column 2 -->
+                            <div>
+                                <ul class="flex flex-col space-y-3">
+                                    <li><a href="#" class="hover:underline">Help Centre</a></li>
+                                    <li><a href="#" class="hover:underline">Jobs</a></li>
+                                    <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
+                                    <li><a href="#" class="hover:underline">Legal Notices</a></li>
+                                </ul>
+                            </div>
+    
+                            <!-- Column 3 -->
+                            <div>
+                                <ul class="flex flex-col space-y-3">
+                                    <li><a href="#" class="hover:underline">Account</a></li>
+                                    <li><a href="#" class="hover:underline">Ways to Watch</a></li>
+                                    <li><a href="#" class="hover:underline">Corporate Information</a></li>
+                                    <li><a href="#" class="hover:underline">Only on Netflix</a></li>
+                                </ul>
+                            </div>
+    
+                            <!-- Column 4 -->
+                            <div>
+                                <ul class="flex flex-col space-y-3">
+                                    <li><a href="#" class="hover:underline">Media Centre</a></li>
+                                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Language Selector -->
+                        <div class="relative mt-8 w-full max-w-full text-center sm:text-left">
+                            <div class="inline-block">
+                                <svg class="text-white absolute top-[10px] sm:left-[7px] ml-[4px]" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path>
+                                </svg>
+                                <select name="language" class="sm:appearance-none appearance-auto text-white font-semibold border-[0.1px] bg-[rgba(0,0,0,0.5)] border-white rounded-full px-[25px] w-[130px] py-[6px] text-center">
+                                    <option value="en">English</option>
+                                    <option value="hi">Hindi</option>
+                                </select>
+                                <svg class="absolute hidden sm:block sm:left-25 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white pointer-events-none" 
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <!-- Netflix Clone Attribution -->
+                        <div class="mt-8 text-gray-500 text-sm">
+                            <p>&copy; 2023 Netflix Clone. Made with ❤️ by Amlan Jyoti.</p>
+                        </div>
+                    </div>
+                </footer>
             </div>
-          </section>
     
-        <!-- frequently asked question section ends here -->
+          </div>
+
+
+    </div>
+
+      <!-- Banner div ends here -->
+
     
-          <!-- get start section -->
-           <section class="mx-auto sm:relative pt-[60px]">
-            <div>
-                <div class="text-center">
-                    <h3 class="text-white">Ready to watch? Enter your email to create or restart your membership.</h3>
-                </div>
-                <div class="max-w-[400px] sm:max-w-[700px] mx-auto mt-5">
-                    <form action="" class="relative  flex sm:flex-row flex-col space-y-2 sm:space-y-0 items-center justify-center sm:space-x-2">
-                        <input class="h-12 w-full rounded-full sm:w-[70%] border-[0.5px] border-[rgba(255,255,255,0.8)] bg-[rgba(255,255,255,0.3)] px-4 text-white" autocomplete="email" type="text" placeholder="Email address">
-                        <button class="hidden sm:block h-12 w-full rounded-full sm:w-auto sm:px-4 bg-red-600 text-white hover:bg-red-800 ">Get Started ></button>
-                    </form>                    
-                </div>
-            </div>
-           </section>
-           <button class="sm:hidden mt-2 sticky bottom-6 rounded-full h-12 max-w-[400px] w-full  bg-red-600 text-white hover:bg-red-800 ">Get Started ></button>
-
-      </section>
-      
-      
-       <!-- Footer Section -->
-        <section class="xl:mt-[180px] mt-[550px] pb-[50px]  bg-black">
-            <footer class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="font-extralight text-[15px] flex flex-col items-center">
-                    <!-- Questions Link -->
-                    <div class="w-full max-w-full sm:text-left text-center ">
-                        <h3 class="text-white">
-                            Questions? Call 
-                            <span class="underline cursor-pointer">000-800-919-1743</span>
-                        </h3>
-                    </div>
-
-                    <!-- Footer Links -->
-                    <div class="w-full text-white text-center sm:text-justify md:text-left md:flex grid grid-cols-2 sm:grid-cols-3 gap-4 mt-[50px] justify-center md:justify-between">
-                        <!-- Column 1 -->
-                        <div>
-                            <ul class="flex flex-col space-y-3">
-                                <li><a href="#" class="hover:underline">FAQ</a></li>
-                                <li><a href="#" class="hover:underline">Investor Relations</a></li>
-                                <li><a href="#" class="hover:underline">Privacy</a></li>
-                                <li><a href="#" class="hover:underline">Speed Test</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Column 2 -->
-                        <div>
-                            <ul class="flex flex-col space-y-3">
-                                <li><a href="#" class="hover:underline">Help Centre</a></li>
-                                <li><a href="#" class="hover:underline">Jobs</a></li>
-                                <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
-                                <li><a href="#" class="hover:underline">Legal Notices</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Column 3 -->
-                        <div>
-                            <ul class="flex flex-col space-y-3">
-                                <li><a href="#" class="hover:underline">Account</a></li>
-                                <li><a href="#" class="hover:underline">Ways to Watch</a></li>
-                                <li><a href="#" class="hover:underline">Corporate Information</a></li>
-                                <li><a href="#" class="hover:underline">Only on Netflix</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Column 4 -->
-                        <div>
-                            <ul class="flex flex-col space-y-3">
-                                <li><a href="#" class="hover:underline">Media Centre</a></li>
-                                <li><a href="#" class="hover:underline">Terms of Use</a></li>
-                                <li><a href="#" class="hover:underline">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Language Selector -->
-                    <div class="relative mt-8 w-full max-w-full text-center sm:text-left">
-                        <div class="inline-block">
-                            <svg class="text-white absolute top-[10px] sm:left-[7px] ml-[4px]" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" aria-hidden="true">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path>
-                            </svg>
-                            <select name="language" class="sm:appearance-none appearance-auto text-white font-semibold border-[0.1px] bg-[rgba(0,0,0,0.5)] border-white rounded-full px-[25px] w-[130px] py-[6px] text-center">
-                                <option value="en">English</option>
-                                <option value="hi">Hindi</option>
-                            </select>
-                            <svg class="absolute hidden sm:block sm:left-25 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white pointer-events-none" 
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- Netflix Clone Attribution -->
-                    <div class="mt-8 text-gray-500 text-sm">
-                        <p>&copy; 2023 Netflix Clone. Made with ❤️ by Amlan Jyoti.</p>
-                    </div>
-                </div>
-            </footer>
-        </section>
-      
-
-      
+    <!-- </div> -->
+<!-- </div> -->
 
      
 </body>

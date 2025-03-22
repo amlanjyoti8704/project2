@@ -9,6 +9,7 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-600: oklch(0.577 0.245 27.325);
     --color-red-800: oklch(0.444 0.177 26.899);
+    --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-500: oklch(0.551 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
@@ -24,6 +25,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-extralight: 200;
+    --font-weight-light: 300;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -263,9 +265,6 @@
   .right-3 {
     right: calc(var(--spacing) * 3);
   }
-  .bottom-6 {
-    bottom: calc(var(--spacing) * 6);
-  }
   .left-2 {
     left: calc(var(--spacing) * 2);
   }
@@ -392,6 +391,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -407,8 +409,8 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
-  .mt-\[550px\] {
-    margin-top: 550px;
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
   }
   .ml-\[4px\] {
     margin-left: 4px;
@@ -523,8 +525,8 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-\[40vh\] {
-    height: 40vh;
+  .h-\[60vh\] {
+    height: 60vh;
   }
   .h-\[65px\] {
     height: 65px;
@@ -555,6 +557,9 @@
   }
   .max-h-screen {
     max-height: 100vh;
+  }
+  .min-h-12 {
+    min-height: calc(var(--spacing) * 12);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -1023,6 +1028,20 @@
       margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-\[10px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(10px * var(--tw-space-y-reverse));
+      margin-block-end: calc(10px * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-\[30px\] {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1184,6 +1203,10 @@
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
   }
+  .rounded-t-2xl {
+    border-top-left-radius: var(--radius-2xl);
+    border-top-right-radius: var(--radius-2xl);
+  }
   .rounded-l {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
@@ -1201,6 +1224,10 @@
   .rounded-b {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
+  }
+  .rounded-b-2xl {
+    border-bottom-right-radius: var(--radius-2xl);
+    border-bottom-left-radius: var(--radius-2xl);
   }
   .rounded-br {
     border-bottom-right-radius: 0.25rem;
@@ -1326,6 +1353,9 @@
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1516,6 +1546,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .p-\[4px_20px\] {
     padding: 4px 20px;
   }
@@ -1540,17 +1573,50 @@
   .py-\[200px\] {
     padding-block: 200px;
   }
-  .py-\[670px\] {
-    padding-block: 670px;
-  }
-  .py-\[1070px\] {
-    padding-block: 1070px;
+  .pt-\[10px\] {
+    padding-top: 10px;
   }
   .pt-\[60px\] {
     padding-top: 60px;
   }
-  .pt-\[580px\] {
-    padding-top: 580px;
+  .pt-\[70px\] {
+    padding-top: 70px;
+  }
+  .pt-\[80px\] {
+    padding-top: 80px;
+  }
+  .pt-\[90px\] {
+    padding-top: 90px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
+  }
+  .pt-\[110px\] {
+    padding-top: 110px;
+  }
+  .pt-\[120px\] {
+    padding-top: 120px;
+  }
+  .pt-\[150px\] {
+    padding-top: 150px;
+  }
+  .pt-\[180px\] {
+    padding-top: 180px;
+  }
+  .pt-\[200px\] {
+    padding-top: 200px;
+  }
+  .pt-\[500px\] {
+    padding-top: 500px;
+  }
+  .pt-\[670px\] {
+    padding-top: 670px;
+  }
+  .pt-\[1020px\] {
+    padding-top: 1020px;
+  }
+  .pb-\[1px\] {
+    padding-bottom: 1px;
   }
   .pb-\[50px\] {
     padding-bottom: 50px;
@@ -1627,6 +1693,10 @@
   .font-extralight {
     --tw-font-weight: var(--font-weight-extralight);
     font-weight: var(--font-weight-extralight);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -2167,6 +2237,48 @@
       }
     }
   }
+  .hover\:bg-\[rgba\(\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba();
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(255\,255\,255\,\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(255,255,255,);
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(255\,255\,255\,0\.3\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(255,255,255,0.3);
+      }
+    }
+  }
+  .hover\:bg-\[rgba\(255\,255\,255\,0\.5\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba(255,255,255,0.5);
+      }
+    }
+  }
+  .hover\:bg-\[rgba\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba;
+      }
+    }
+  }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
   .hover\:bg-red-800 {
     &:hover {
       @media (hover: hover) {
@@ -2269,6 +2381,11 @@
       }
     }
   }
+  .sm\:p-\[30px\] {
+    @media (width >= 40rem) {
+      padding: 30px;
+    }
+  }
   .sm\:px-4 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 4);
@@ -2284,9 +2401,54 @@
       padding-block: 230px;
     }
   }
-  .sm\:py-\[700px\] {
+  .sm\:pt-\[0px\] {
     @media (width >= 40rem) {
-      padding-block: 700px;
+      padding-top: 0px;
+    }
+  }
+  .sm\:pt-\[1\] {
+    @media (width >= 40rem) {
+      padding-top: 1;
+    }
+  }
+  .sm\:pt-\[11\] {
+    @media (width >= 40rem) {
+      padding-top: 11;
+    }
+  }
+  .sm\:pt-\[100px\] {
+    @media (width >= 40rem) {
+      padding-top: 100px;
+    }
+  }
+  .sm\:pt-\[180px\] {
+    @media (width >= 40rem) {
+      padding-top: 180px;
+    }
+  }
+  .sm\:pt-\[560px\] {
+    @media (width >= 40rem) {
+      padding-top: 560px;
+    }
+  }
+  .sm\:pt-\[700px\] {
+    @media (width >= 40rem) {
+      padding-top: 700px;
+    }
+  }
+  .sm\:pt-\[1100px\] {
+    @media (width >= 40rem) {
+      padding-top: 1100px;
+    }
+  }
+  .sm\:pt-\[1110px\] {
+    @media (width >= 40rem) {
+      padding-top: 1110px;
+    }
+  }
+  .sm\:pt-\[1800px\] {
+    @media (width >= 40rem) {
+      padding-top: 1800px;
     }
   }
   .sm\:text-justify {
@@ -2325,9 +2487,19 @@
       padding-block: calc(var(--spacing) * 3);
     }
   }
-  .md\:py-\[1070px\] {
+  .md\:pt-\[100px\] {
     @media (width >= 48rem) {
-      padding-block: 1070px;
+      padding-top: 100px;
+    }
+  }
+  .md\:pt-\[180px\] {
+    @media (width >= 48rem) {
+      padding-top: 180px;
+    }
+  }
+  .md\:pt-\[1090px\] {
+    @media (width >= 48rem) {
+      padding-top: 1090px;
     }
   }
   .md\:text-left {
@@ -2339,6 +2511,18 @@
     @media (width >= 48rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .md\:hover\:scale-110 {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          --tw-scale-x: 110%;
+          --tw-scale-y: 110%;
+          --tw-scale-z: 110%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
     }
   }
   .lg\:px-8 {
@@ -2354,11 +2538,6 @@
   .xl\:mx-\[150px\] {
     @media (width >= 80rem) {
       margin-inline: 150px;
-    }
-  }
-  .xl\:mt-\[180px\] {
-    @media (width >= 80rem) {
-      margin-top: 180px;
     }
   }
   .xl\:mr-\[100px\] {
@@ -2404,11 +2583,6 @@
   .xl\:justify-center {
     @media (width >= 80rem) {
       justify-content: center;
-    }
-  }
-  .xl\:pt-\[180px\] {
-    @media (width >= 80rem) {
-      padding-top: 180px;
     }
   }
   .xl\:text-3xl {
